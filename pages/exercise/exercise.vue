@@ -21,6 +21,7 @@
 			<view class="question">
 				{{nowQuestion+1}}. {{items[nowQuestion].question}}
 			</view>
+			//奥术大师多撒多
 			<view v-for="(list,index) in items[nowQuestion].list" v-bind:key="index" 
 			@click="goNext(index)" :class="'answer '+(items[nowQuestion].answer == index?'active':'')">
 				{{items[nowQuestion].list[index].text}}
